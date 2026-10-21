@@ -1,26 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LearnHub</title>
-    <link rel="stylesheet" href="color.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav>
-      <div class="logo">
-        <img
-          src="./images/favicon_io/apple-touch-icon.png"
-          alt=""
-          height="24px"
-          width="24px"
-        />
-        <p>LearnHub</p>
-      </div>
 
-      <div class="menu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnHub</title>
+  <link rel="stylesheet" href="color.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav>
+
+    <div class="logo">
+      <i class="fa-solid fa-book-open"></i>
+      <p>LearnHub</p>
+    </div>
+
+
+    <div class="menu-bar">
+
+      <button class="mobile-menu" id="menubtn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+
+      <div class="menu" id="menu">
         <a href="#">Home</a>
         <a href="#">Courses</a>
         <a href="#">Mentor</a>
@@ -28,123 +40,1214 @@
         <a href="#">Testimoniols</a>
         <a href="#">Pricing</a>
       </div>
+    </div>
 
-      <button>Get Started</button>
-    </nav>
 
-    <!-- SECTION 1 -->
-    <section class="section1" id="Home">
-<div class="before"></div>
-      <!-- LEFT SIDE -->
 
-      <div class="leftcontent">
-        <div class="newcourse">
-          <span>●</span>
-          New Courses Available
+
+    <button  class="openform" id="openform">Get Started</button>
+
+
+  </nav>
+  <!-- ---------------------------------------------------------------------------------------------------------- -->
+   <div id="form-overlay">
+<form id="form">
+<div class="title">
+  <h3>Create your account</h3>
+
+  <span id="closeform"><i class="fa-solid fa-xmark"></i></span>
+</div>
+
+<div class="form-container">
+<div class="input">
+  <label for="">Full Name</label>
+  <input type="text" placeholder="Enter your name">
+</div>
+<div class="input">
+  <label for="">Email address</label>
+  <input type="email" placeholder="name@example.com">
+</div>
+<div class="input">
+  <label for="">Password</label>
+  <input type="password" placeholder="Create a password">
+</div>
+<div class="input">
+  <label for="">Confirm password</label>
+  <input type="password" placeholder="Re-enter the password">
+</div>
+<span class="checkbox"><input type="checkbox">I agree to the terms and privacy</span>
+<button>Sign up</button>
+
+  
+</div>
+
+</form>
+   </div>
+
+
+  <!-- SECTION 1 -->
+  <section class="section1" id="Home">
+
+    <div class="hero-background"></div>
+    <!-- LEFT SIDE -->
+
+    <div class="hero-content">
+
+      <div class="course-badge">
+        <i class="fa-solid fa-circle"></i>
+        </p> New Courses Available</p>
+      </div>
+
+      <h1>
+        Master New Skills
+        <span>Online Anytime,</span>
+        Anywhere
+      </h1>
+
+      <p>
+        Join over 50,000+ students learning from world-class mentors.
+        Transform your career with industry-leading courses.
+      </p>
+
+      <!-- BUTTONS -->
+
+      <div class="hero-actions">
+
+        <button> Start Learning
+          <i class="fa-solid fa-arrow-right"></i></button>
+
+
+
+        <a href="" target="_blank" class="secondary-btn">
+          <i class="fa-brands fa-youtube"></i>
+          YouTube Channel
+        </a>
+
+      </div>
+
+      <!-- STATS -->
+
+      <div class="stats">
+
+        <div class="stat">
+          <i class="fa-solid fa-users"></i>
+          <strong>50K+</strong>
+          Students
         </div>
 
-        <h1>
-          Master New Skills
-          <span>Online Anytime,</span>
-          Anywhere
-        </h1>
+        <div class="stat">
+          <img src="./images/favicon_io/favicon-16x16.png" alt="">
+          <strong>200+</strong>
+          Courses
+        </div>
+
+        <div class="stat">
+          <i class="fa-solid fa-award"></i>
+          <strong>4.9</strong>Rating
+        </div>
+      </div>
+    </div>
+
+    <!-- hero-content ENDED -->
+
+    <!-- hero-visual -->
+
+    <div class="hero-visual">
+
+      <div class="hero-image">
+        <img src="./images/hero-img.jpg" alt="" />
+
+        <button class="play-button"><i class="fa-solid fa-play"></i></button>
+      </div>
+
+      <!-- --------------------------------------------  -->
+      <div class="student-badge">
+
+        <div class="avatar-group">
+          <img src="./images/avatar/avatar-1.jpg" alt="" />
+          <img src="./images/avatar/avatar-2.jpg" alt="" />
+          <img src="./images/avatar/avatar-3.jpg" alt="" />
+        </div>
+
+        <div class="badge-info">
+          <strong>Join 50K</strong>
+          <small>Students</small>
+        </div>
+
+      </div>
+
+
+      <div class="course-badge-card">
+
+        <div class="social-link">
+          <i class="fa-solid fa-book-open"></i>
+        </div>
+
+        <div class="badge-info">
+          <strong>200+ Courses</strong>
+          <small>Available Now</small>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+  <!-- SECTION 1 ENDED  -->
+
+  <!-- SECTION 2 -->
+  <section class="section2" id="Courses">
+    <div class="heading">
+      <h5>COURSE</h5>
+      <h2>Explore Our Popular <span>Courses</span> </h2>
+      <p>
+        Choose from hundreds of courses designed by industry experts to help
+        you achieve
+        your goals.
+      </p>
+    </div>
+
+    <div class="course-list">
+      <!-- course-card start  -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="./images/course-img-1.jpg" alt="" />
+
+          <div class="course-category"><span>Development</span></div>
+        </div>
+
+        <div class="course-info">
+          <h6>Web Development Bootcamp</h6>
+
+          <div class="instructor">
+            <img src="./images/avatar/avatar-1.jpg" alt="" />
+            <span>Trisha leo</span>
+          </div>
+
+          <div class="course-meta">
+            <div>
+              <i class="fa-regular fa-clock"></i>
+              <span>12 weeks</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-users"></i>
+              <span>2.4K</span>
+            </div>
+            <div class="meta-rating">
+              <i class="fa-solid fa-star"></i>
+              <span>4.8</span>
+            </div>
+
+          </div>
+
+          <div class="course-footer">
+            <h3>$49</h3>
+
+            <button>Enroll now <i class="fa-solid fa-arrow-right"></i></button>
+
+
+          </div>
+
+        </div>
+      </div>
+      <!-- course-card end  -->
+      <!-- course-card star  -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="./images/course-img-2.jpg" alt="" />
+
+          <div class="course-category">
+            <span>Design</span>
+          </div>
+
+        </div>
+
+        <div class="course-info">
+          <h6>UI/UX Design Masterclass</h6>
+
+          <div class="instructor">
+            <img src="./images/avatar/avatar-2.jpg" alt="" />
+            <span>Sarah Johnson</span>
+          </div>
+
+          <div class="course-meta">
+            <div>
+              <i class="fa-regular fa-clock"></i>
+              <span>8 weeks</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-users"></i>
+              <span>1.8K</span>
+            </div>
+            <div class="meta-rating">
+              <i class="fa-solid fa-star"></i>
+              <span>4.8</span>
+            </div>
+
+          </div>
+
+          <div class="course-footer">
+            <h3>$79</h3>
+
+            <button>Enroll now <i class="fa-solid fa-arrow-right"></i></button>
+
+
+          </div>
+
+        </div>
+      </div>
+      <!-- course-card end  -->
+      <!-- course-card star  -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="./images/course-img-3.jpg" alt="" />
+
+          <div class="course-category"><span>Data Science</span></div>
+        </div>
+
+        <div class="course-info">
+          <h6>Data Science & Analytics</h6>
+
+          <div class="instructor">
+            <img src="./images/avatar/avatar-3.jpg" alt="" />
+            <span>Mike Chen</span>
+          </div>
+
+
+          <div class="course-meta">
+            <div>
+              <i class="fa-regular fa-clock"></i>
+              <span>16 weeks</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-users"></i>
+              <span>3.2K</span>
+            </div>
+            <div class="meta-rating">
+              <i class="fa-solid fa-star"></i>
+              <span>4.8</span>
+            </div>
+
+          </div>
+
+          <div class="course-footer">
+            <h3>$129</h3>
+
+            <button>Enroll now <i class="fa-solid fa-arrow-right"></i></button>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- course-card end  -->
+      <!-- course-card start  -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="./images/course-img-4.jpg" alt="" />
+
+          <div class="course-category"><span>Marketing</span></div>
+        </div>
+
+        <div class="course-info">
+          <h6>Digital Marketing Pro</h6>
+
+          <div class="instructor">
+            <img src="./images/avatar/avatar-4.jpg" alt="" />
+            <span>Emma Davis</span>
+          </div>
+
+
+          <div class="course-meta">
+            <div>
+              <i class="fa-regular fa-clock"></i>
+              <span>6 weeks</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-users"></i>
+              <span>1.5K</span>
+            </div>
+            <div class="meta-rating">
+              <i class="fa-solid fa-star"></i>
+              <span>4.7</span>
+            </div>
+
+          </div>
+
+          <div class="course-footer">
+            <h3>$69</h3>
+
+            <button>Enroll now <i class="fa-solid fa-arrow-right"></i></button>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- course-card end  -->
+
+    <div class="course-action">
+      <button class="course-btn">View All Courses <i class="fa-solid fa-arrow-right"></i></button>
+  </section>
+
+  <!-- SECTION 2 ENDED -->
+
+  <!-- SECTION 3 START -->
+
+  <section class="section3" id="Mentor">
+
+    <div class="heading">
+      <h5>Mentors</h5>
+      <h2>Learn From Industry <span>Experts</span> </h2>
+      <p>
+        Our mentors are industry leaders with years of experience in their
+        <br />
+        respective fields.
+      </p>
+    </div>
+
+    <div class="mentor-list">
+      <!-- mentor-card star  -->
+      <div class="mentor-card">
+
+        <div class="mentor-image">
+          <img src="./images/avatar/avatar-1.jpg" alt="" />
+
+          <div class="mentor-rating"><span>4.9</span><i class="fa-solid fa-star"></i></div>
+        </div>
+
+        <div class="mentor-info">
+          <h6>John Smith</h6>
+          <span>Web Developer Expert</span>
+          <p>
+            8+ years experience in data analysis and machine learning.
+            Former Data
+            Scientist at Facecourse-icon.
+          </p>
+        </div>
+
+        <div class="mentor-meta">
+          <span><strong>20K+</strong> Students</span>
+          <span><strong>10</strong> Courses</span>
+        </div>
+
+        <div class="social-links">
+          <div class="social-link">
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+          <div class="social-link">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div class="social-link">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+      <!-- mentor-card end  -->
+      <!-- mentor-card star  -->
+      <div class="mentor-card">
+
+        <div class="mentor-image">
+          <img src="./images/avatar/avatar-1.jpg" alt="" />
+
+          <div class="mentor-rating"><span>4.9</span><i class="fa-solid fa-star"></i></div>
+        </div>
+
+        <div class="mentor-info">
+          <h6>Sarah Johnson</h6>
+          <span>Digital Marketing Guru</span>
+          <p>
+            10+ years experience in digital marketing and SEO strategies. Former Marketing Manager at Google.
+          </p>
+        </div>
+
+        <div class="mentor-meta">
+          <span><strong>15K+</strong> Students</span>
+          <span><strong>8</strong> Courses</span>
+        </div>
+
+        <div class="social-links">
+          <div class="social-link"><i class="fa-brands fa-x-twitter"></i></div>
+          <div class="social-link"><i class="fa-brands fa-github"></i></div>
+          <div class="social-link"><i class="fa-brands fa-linkedin"></i></div>
+        </div>
+      </div>
+      <!-- mentor-card end  -->
+      <!-- mentor-card star  -->
+      <div class="mentor-card">
+
+        <div class="mentor-image">
+          <img src="./images/avatar/avatar-1.jpg" alt="" />
+
+          <div class="mentor-rating"><span>4.9</span><i class="fa-solid fa-star"></i></div>
+        </div>
+
+        <div class="mentor-info">
+          <h6>Mike Chen</h6>
+          <span>Data Science Specialist</span>
+          <p>
+            7+ years experience in data analysis and machine learning. Former Data Scientist at Facebook.
+          </p>
+        </div>
+
+        <div class="mentor-meta">
+          <span><strong>18K+</strong> Students</span>
+          <span><strong>12</strong> Courses</span>
+        </div>
+
+        <div class="social-links">
+          <div class="social-link"><i class="fa-brands fa-x-twitter"></i></div>
+          <div class="social-link"><i class="fa-brands fa-github"></i></i></div>
+          <div class="social-link"><i class="fa-brands fa-linkedin"></i></div>
+        </div>
+      </div>
+      <!-- mentor-card end  -->
+      <!-- mentor-card star  -->
+      <div class="mentor-card">
+
+        <div class="mentor-image">
+          <img src="./images/avatar/avatar-1.jpg" alt="" />
+
+          <div class="mentor-rating"><span>4.9</span><i class="fa-solid fa-star"></i></div>
+        </div>
+
+        <div class="mentor-info">
+          <h6>Emma Davis</h6>
+          <span>Graphic Design Artist</span>
+          <p>
+            7+ years experience in data analysis and machine learning. Former Data Scientist at Facebook.
+          </p>
+        </div>
+
+        <div class="mentor-meta">
+          <span><strong>22K+</strong> Students</span>
+          <span><strong>9</strong> Courses</span>
+        </div>
+
+        <div class="social-links">
+          <div class="social-link"><i class="fa-brands fa-x-twitter"></i></div>
+          <div class="social-link"><i class="fa-brands fa-github"></i></div>
+          <div class="social-link">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+      <!-- mentor-card end  -->
+
+
+      <!-- course-list end  -->
+    </div>
+
+  </section>
+  <!-- SECTION 3 END  -->
+
+  <!-- SECTION 4 START  -->
+
+  <section class="section4" id="Group">
+    <div class="community-background"></div>
+
+    <!-- rightside -->
+    <div class="community-content">
+      <div class="heading">
+
+        <h5>Community</h5>
+
+        <h2>Join Our Thriving <span>Learning
+            Community</span></h2>
 
         <p>
-          Join over 50,000+ students learning from world-class mentors.
-          Transform your career with industry-leading courses.
+          Learning is better together. Join our community of 50,000+ students and unlock collaborative features that
+          accelerate your growth.
+
+
+        </p>
+      </div>
+
+      <div class="community-features">
+
+        <!-- start  -->
+        <div class="community-feature">
+
+          <div class="social-link"> <i class="fa-solid fa-users"></i>
+          </div>
+
+          <div class="feature-content">
+            <h3>Study Groups</h3>
+            <p>
+              Connect with like-minded learners and form study groups for
+              collaborative learning
+            </p>
+          </div>
+        </div>
+        <!-- end  -->
+        <!-- start  -->
+        <div class="community-feature">
+
+          <div class="social-link"> <i class="fa-regular fa-comment"></i></div>
+
+          <div class="feature-content">
+            <h3>Study Groups</h3>
+            <p>
+              Connect with like-minded learners and form study groups for
+              collaborative learning
+            </p>
+          </div>
+        </div>
+        <!-- end  -->
+        <!-- start  -->
+        <div class="community-feature">
+
+          <div class="social-link"> <i class="fa-regular fa-calendar"></i></div>
+
+          <div class="feature-content">
+            <h3>Study Groups</h3>
+            <p>
+              Connect with like-minded learners and form study groups for
+              collaborative learning
+            </p>
+          </div>
+        </div>
+        <!-- end  -->
+        <!-- start  -->
+        <div class="community-feature">
+
+          <div class="social-link"> <i class="fa-regular fa-bell"></i></div>
+
+          <div class="feature-content">
+            <h3>Study Groups</h3>
+            <p>
+              Connect with like-minded learners and form study groups for
+              collaborative learning
+            </p>
+          </div>
+        </div>
+        <!-- end  -->
+        <!-- start  -->
+        <div class="community-feature">
+
+          <div class="social-link"> <i class="fa-solid fa-globe"></i></div>
+
+          <div class="feature-content">
+            <h3>Study Groups</h3>
+            <p>
+              Connect with like-minded learners and form study groups for
+              collaborative learning
+            </p>
+          </div>
+        </div>
+        <!-- end  -->
+        <!-- start  -->
+        <div class="community-feature">
+
+          <div class="social-link">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+          </div>
+
+          <div class="feature-content">
+            <h3>Study Groups</h3>
+            <p>
+              Connect with like-minded learners and form study groups for
+              collaborative learning
+            </p>
+          </div>
+        </div>
+        <!-- end  -->
+
+      </div>
+
+      <button>Join Community</button>
+      <!-- community-features end  -->
+    </div>
+
+    <!-- ending div  -->
+
+
+
+
+
+    <!-- rightside content  -->
+    <div class="community-visual">
+
+      <div class="hour-badge">
+        <div class="social-link">
+          <i class="fa-regular fa-comment"></i>
+        </div>
+
+        <div class="badge-info">
+          <strong>24/7</strong>
+          <small>Always here</small>
+        </div>
+      </div>
+
+      <div class="community-avatars">
+        <img src="./images/avatar/avatar-1.jpg" alt="">
+        <img src="./images/avatar/avatar-1.jpg" alt="">
+        <img src="./images/avatar/avatar-1.jpg" alt="">
+        <img src="./images/avatar/avatar-1.jpg" alt="">
+        <img src="./images/avatar/avatar-1.jpg" alt="">
+        <img src="./images/avatar/avatar-1.jpg" alt="">
+        <img src="./images/avatar/avatar-1.jpg" alt="">
+        <img src="./images/avatar/avatar-1.jpg" alt="">
+        <img src="./images/avatar/avatar-1.jpg" alt="">
+
+
+      </div>
+      <div class="country-badge">
+
+        <div class="social-link">
+
+          <i class="fa-solid fa-globe"></i>
+        </div>
+
+
+        <div class="badge-info">
+          <strong>150+ Countries</strong>
+          <small>Worldwide reach</small>
+        </div>
+      </div>
+      <!-- rightcommunity-features end  -->
+    </div>
+  </section>
+  <!-- SECTION 4END  -->
+
+
+
+  <!-- SECTION 5 START -->
+
+  <section class="section5" id="Testimoniols">
+    <div class="heading">
+
+      <h5>Mentors</h5>
+      <h2>What Our Students Say</h2>
+      <p>
+        Join thousands of successful students who have transformed their
+        careers with LearnHub.
+      </p>
+    </div>
+
+    <div class="testimonials-list">
+      <!-- course-card star  -->
+      <div class="testimonials-card">
+        <div class="testimonials-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <span class="quote-icon"><i class="fa-solid fa-quote-right"></i></span>
+
+        <p>
+          "LearnHub completely transformed my career. The web development
+          bootcamp gave me the skills I needed to land my dream job at Meta.
+          The mentors are incredible!"
         </p>
 
-        <!-- BUTTONS -->
+        <div class="testimonials-author">
+          <img src=".//images/avatar/avatar-1.jpg" alt="" />
 
-        <div class="coursebuttons">
-          <a href="#" class="startbtn">
-            Start Learning
-            <span>→</span>
-          </a>
-
-          <a href="https://www.youtube.com/" target="_blank" class="youtubebtn">
-            <span class="youtube-icon">▶</span>
-            YouTube Channel
-          </a>
-        </div>
-
-        <!-- STATS -->
-
-        <div class="stats">
-          <div class="stat">
-            <span class="stat-icon">♧</span>
-            <strong>50K+</strong>
-            Students
-          </div>
-
-          <div class="stat">
-            <span class="stat-icon">▣</span>
-            <strong>200+</strong>
-            Courses
-          </div>
-
-          <div class="stat">
-            <span class="stat-icon">♧</span> <strong>4.9</strong>Rating
+          <div class="author-info">
+            <strong>Alex Thompsons </strong>
+            <small>Sodtware Developer at Meta</small>
           </div>
         </div>
-      </div>
-
-      <!-- LEFTCONTENT ENDED -->
-
-      <!-- RIGHTCONTENT -->
-
-      <div class="rightcontent">
-        <div class="rightimg">
-          <img src="./images/hero-img.jpg" alt="" />
-
-          <button class="playbtn"><i class="fa-solid fa-play"></i></button>
-        </div>
- 
-
-      <div class="badge">
-
-        <div class="people">
-            <img src="./images/avatar/avatar-1.jpg" alt="">
-            <img src="./images/avatar/avatar-2.jpg" alt="">
-            <img src="./images/avatar/avatar-3.jpg" alt="">
-        </div>
-
-        <div>
-            <strong>Join 50K</strong>
-            <small>Students</small>
-        </div>
-      </div>
-
-      <div class="badge2">
-
-        <div class="book">
-            <img src="images/favicon_io/favicon-16x16.png" alt="">
-         
-        </div>
-
-        <div>
-            <strong>200+  Courses</strong>
-            <small>Available Now</small>
-        </div>
-      </div>
 
       </div>
-<!-- RIGHTCONTENT ENDED  -->
-    </section>
- <!-- SECTION 1 ENDED  -->
+      <!-- testimonial-card end  -->
+      <!-- course-card star  -->
+      <div class="testimonials-card">
+        <div class="testimonials-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <span class="quote-icon"><i class="fa-solid fa-quote-right"></i></span>
+
+        <p>
+          "The UI/UX design course was exactly what I needed. The practical projects and mentor feedback helped me build
+          a portfolio that got me hired at Spotify."
+        </p>
+
+        <div class="testimonials-author">
+          <img src=".//images/avatar/avatar-1.jpg" alt="" />
+
+          <div class="author-info">
+            <strong>Jessica Lee</strong>
+            <small>UX Designer at Spotify</small>
+          </div>
+        </div>
+
+      </div>
+      <!-- testimonial-card end  -->
+      <!-- course-card star  -->
+      <div class="testimonials-card">
+        <div class="testimonials-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <span class="quote-icon"><i class="fa-solid fa-quote-right"></i></span>
+
+        <p>
+          "I switched careers from marketing to data science thanks to LearnHub. The structured curriculum and
+          supportive community made the transition seamless."
+        </p>
+
+        <div class="testimonials-author">
+          <img src=".//images/avatar/avatar-1.jpg" alt="" />
+
+          <div class="author-info">
+            <strong>David Park</strong>
+            <small>Data Analyst at Amazon</small>
+          </div>
+        </div>
+
+      </div>
+      <!-- testimonial-card end  -->
+      <!-- course-card star  -->
+      <div class="testimonials-card">
+        <div class="testimonials-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <span class="quote-icon"><i class="fa-solid fa-quote-right"></i></span>
+
+        <p>
+          "As a freelancer, I needed flexible learning. LearnHub's self-paced courses fit perfectly into my schedule.
+          Highly recommend!"
+        </p>
+
+        <div class="testimonials-author">
+          <img src=".//images/avatar/avatar-1.jpg" alt="" />
+
+          <div class="author-info">
+            <strong>Maria Garcia</strong>
+            <small>Freelance Designer</small>
+          </div>
+        </div>
+
+      </div>
+      <!-- testimonial-card end  -->
+      <!-- course-card star  -->
+      <div class="testimonials-card">
+        <div class="testimonials-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <span class="quote-icon"><i class="fa-solid fa-quote-right"></i></span>
+
+        <p>
+          "As a freelancer, I needed flexible learning. LearnHub's self-paced courses fit perfectly into my schedule.
+          Highly recommend!"
+        </p>
+
+        <div class="testimonials-author">
+          <img src=".//images/avatar/avatar-1.jpg" alt="" />
+
+          <div class="author-info">
+            <strong>James Wilson </strong>
+            <small>Startup Founder</small>
+          </div>
+        </div>
+
+      </div>
+      <!-- testimonial-card end  -->
+      <!-- course-card star  -->
+      <div class="testimonials-card">
+        <div class="testimonials-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <span class="quote-icon"><i class="fa-solid fa-quote-right"></i></span>
+
+        <p>
+          "The combination of technical and business courses gave me a unique edge. I've recommended LearnHub to all my
+          colleagues."
+        </p>
+
+        <div class="testimonials-author">
+          <img src=".//images/avatar/avatar-1.jpg" alt="" />
+
+          <div class="author-info">
+            <strong>Emily Chen </strong>
+            <small>Product Manager at Google</small>
+          </div>
+        </div>
+
+      </div>
+      <!-- testimonial-card end  -->
+
+    </div>
+    <!--testimonial-list end  -->
+
+
+  </section>
+  <!-- SECTION 5 END  -->
+
+  <!-- SECTION 6 START  -->
+
+  <section class="section6">
+    <div class="heading">
+      <h5>Pricing</h5>
+      <h2>Simple, Transparent <span>Pricing</span> </h2>
+      <p>
+        Choose the plan that fits your learning goals. No hidden fees, cancel anytime
+      </p>
+    </div>
 
 
 
- <!-- SECTION 2 -->
- <section class="section2">
+    <div class="pricing-plans">
 
-  <div>
-    <h5>COURSE</h5>
-    <h2>Explore Our Popular Courses</h2>
-  </div>
+      <!-- price-card star  -->
+      <div class="pricing-card">
 
- </section>
+        <div class="plan-info">
+          <span>Starter</span>
+          <p>Perfect for beginners</p>
+          <strong>Free</strong>
+
+        </div>
 
 
-  </body>
+        <!-- plan-features start  -->
+        <div class="plan-features">
+
+          <div class="plan-feature">
+            <div class="social-link">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p>Acess to 10 free coures</p>
+          </div>
+
+          <div class="plan-feature">
+            <div class="social-link"><i class="fa-solid fa-check"></i>
+            </div>
+            <p>Basic community access</p>
+          </div>
+
+          <div class="plan-feature">
+            <div class="social-link">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p>Email support</p>
+          </div>
+
+          <div class="plan-feature">
+            <div class="social-link">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p>Mobile app access</p>
+          </div>
+
+          <div class="plan-feature">
+            <div class="social-link">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p>Course completion certificates</p>
+          </div>
+
+          <button class="secondary-btn">Get Started</button>
+          <!-- plan-features end  -->
+        </div>
+
+
+
+      </div>
+
+      <!-- course-card end  -->
+      <!-- price-card star  -->
+
+      <div class="pricing-card">
+
+        <span class="popular">Most Popular</span>
+        <div class="plan-info">
+          <span>Pro</span>
+          <p>Most Popular Choice</p>
+          <p><strong>$29</strong>/month</p>
+        </div>
+
+
+        <!-- plan-features start  -->
+        <div class="plan-features">
+
+          <div class="plan-feature">
+            <div class="social-link">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p>Unlimited course access
+            </p>
+          </div>
+
+          <div class="plan-feature">
+            <div class="social-link"><i class="fa-solid fa-check"></i>
+            </div>
+            <p>Full community features
+            </p>
+          </div>
+
+          <div class="plan-feature">
+            <div class="social-link">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p>Priority support 24/7
+            </p>
+          </div>
+
+          <div class="plan-feature">
+            <div class="social-link">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p>Downloadable resources
+            </p>
+          </div>
+
+          <div class="plan-feature">
+            <div class="social-link">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p>Live Q&A sessions
+              Project <br> reviews
+              Career coaching</p>
+          </div>
+          <div class="plan-feature">
+            <div class="social-link">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p>
+              Project reviews
+            </p>
+          </div>
+          <div class="plan-feature">
+            <div class="social-link">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p>
+              Career coaching</p>
+          </div>
+
+          <button>Start Pro Trial</button>
+          <!-- plan-features end  -->
+        </div>
+
+
+
+      </div>
+
+      <!-- course-card end  -->
+      <!-- price-card star  -->
+      <div class="pricing-card">
+
+        <div class="plan-info">
+          <span>Enterprise</span>
+          <p>Perfect for beginners</p>
+          <p><strong>$99</strong>/month</p>
+
+        </div>
+
+
+        <!-- plan-features start  -->
+        <div class="plan-features">
+
+          <div class="plan-feature">
+            <div class="social-link">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p>Acess to 10 free coures</p>
+          </div>
+
+          <div class="plan-feature">
+            <div class="social-link"><i class="fa-solid fa-check"></i>
+            </div>
+            <p>Basic community access</p>
+          </div>
+
+          <div class="plan-feature">
+            <div class="social-link">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p>Email support</p>
+          </div>
+
+          <div class="plan-feature">
+            <div class="social-link">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p>Mobile app access</p>
+          </div>
+
+          <div class="plan-feature">
+            <div class="social-link">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p>Course completion certificates</p>
+          </div>
+
+          <button class="secondary-btn"> Contact Sales</button>
+          <!-- plan-features end  -->
+        </div>
+
+
+
+      </div>
+
+      <!-- course-card end  -->
+
+
+      <!--pricing-plans end  -->
+    </div>
+
+
+    <p class="info">All plans include a 14-day money-back guarantee.No questions asked.</p>
+
+  </section>
+
+
+  <footer>
+
+    <div class="footer-main">
+      <!-- rightside  -->
+      <div class="footer-brand">
+
+        <div class="logo">
+          <i class="fa-solid fa-book-open"></i>
+          <span>LearnHub</span>
+        </div>
+
+        <p>Empowering millions of learners worldwide with industry-leading courses and expert mentors.</p>
+
+
+        <div class="footer-contact">
+          <div class="contact-item">
+            <div class="social-link">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+
+            <a href="mailto:hello@gmail.com">hello@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <div class="social-link">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <a href="tel:">+1 (234) 567-890</a>
+          </div>
+
+          <div class="contact-item">
+            <div class="social-link">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <a href="">San Francisco, CA</a>
+          </div>
+
+        </div>
+
+        <!--------------->
+      </div>
+      <!--------------->
+
+
+      <!--  leftside  -->
+      <div class="footer-navigation">
+
+        <div class="footer-column">
+          <h3>Products</h3>
+          <div class="footer-column-links">
+            <p>Features
+            </p>
+            <p>Pricing
+            </p>
+            <p>Courses
+            </p>
+            <p>Community</p>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Company
+          </h3>
+          <div class="footer-column-links">
+            <p>About Us
+            </p>
+            <p>Careers
+            </p>
+            <p>Blog
+            </p>
+            <p>Press</p>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Support
+          </h3>
+          <div class="footer-column-links">
+            <p>Help Center
+            </p>
+            <p>Contact Us
+            </p>
+            <p>Privacy Policy
+            </p>
+            <p>Terms of Service</p>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Help Center
+          </h3>
+          <div class="footer-column-links">
+            <p>Web Development
+
+            </p>
+            <p>UI/UX Design
+            </p>
+            <p>Data Science
+            </p>
+            <p>Marketing</p>
+          </div>
+        </div>
+
+
+        <!--------------->
+      </div>
+      <!--------------->
+    </div>
+
+
+    <div class="footer-copyright">
+      <p>&copy; 2026 LearnHub. All rights reserved. Developed by <span>Codescandy</span> • Distributed by
+        <span>ThemeWagon</span></p>
+
+      <div class="footer-social">
+        <div><i class="fa-brands fa-x-twitter"></i></div>
+        <div> <i class="fa-brands fa-linkedin"></i></div>
+        <div> <i class="fa-brands fa-github"></i>
+        </div>
+
+      </div>
+
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
 </html>
